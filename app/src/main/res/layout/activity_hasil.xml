@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFF"
+    tools:context="www.kelompok3.com.Hasil">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@drawable/background_navbar"
+                app:popupTheme="@style/AppTheme.PopupOverlay">
+                <ImageView
+                    android:id="@+id/back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="15dp"
+                    android:src="@drawable/icon_back"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hasil Diagnosa"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:textColor="#F1F1F1"
+                    android:layout_marginLeft="40dp" />
+
+            </android.support.v7.widget.Toolbar>
+        </RelativeLayout>
+    </android.support.design.widget.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="15dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Gejala teridentifikasi :"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:textColor="#000"/>
+            <TextView
+                android:id="@+id/txHasilGejala"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="~ gusi membengkak"
+                android:textSize="16dp"
+                android:textColor="#000"/>
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Penyakit terdeteksi :"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:textColor="#000"/>
+            <TextView
+                android:id="@+id/txHasilPenya"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Broncitis"
+                android:textSize="16dp"
+                android:textColor="#000"/>
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Solusi :"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:textColor="#000"/>
+            <TextView
+                android:id="@+id/txSolusi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Broncitis"
+                android:textSize="16dp"
+                android:textColor="#000"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <Button
+                    android:id="@+id/btDetail"
+                    android:layout_width="90dp"
+                    android:layout_height="35dp"
+                    android:text="Detail"
+                    android:background="@drawable/background_content"
+                    android:textColor="#FFF"
+                    android:layout_marginTop="30dp"
+                    android:textStyle="bold"
+                    android:layout_marginRight="20dp"/>
+                <Button
+                    android:id="@+id/btHome"
+                    android:layout_width="90dp"
+                    android:layout_height="35dp"
+                    android:text="Home"
+                    android:background="@drawable/background_content"
+                    android:textColor="#FFF"
+                    android:layout_marginTop="30dp"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

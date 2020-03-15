@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFF"
+    tools:context="www.kelompok3.com.SplasScreen">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:src="@drawable/img_home"
+        android:layout_marginTop="280dp"/>
+    <TextView
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:text="Sistem pakar"
+         android:textColor="#0090FF"
+         android:textSize="20dp"
+         android:textAlignment="center"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Diagnosa Penyakit pada Gigi"
+        android:textColor="#0090FF"
+        android:textSize="12dp"
+        android:textAlignment="center"/>
+
+</LinearLayout>

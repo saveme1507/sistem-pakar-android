@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFF"
+    tools:context="www.kelompok3.com.Mulai">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@drawable/background_navbar"
+                app:popupTheme="@style/AppTheme.PopupOverlay">
+                <ImageView
+                    android:id="@+id/back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="15dp"
+                    android:src="@drawable/icon_back"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Diagnosa Penyakit"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:textColor="#F1F1F1"
+                    android:layout_marginLeft="40dp" />
+
+            </android.support.v7.widget.Toolbar>
+        </RelativeLayout>
+    </android.support.design.widget.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="50dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:background="#FFF">
+            <TextView
+                android:id="@+id/txTanya"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:text="Apakah"
+                android:textColor="#000"
+                android:layout_marginBottom="30dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="end">
+                <Button
+                    android:id="@+id/BtnYa"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:text="Ya"
+                    android:textColor="#FFF"
+                    android:background="@drawable/background_content"
+                    android:textSize="16dp"
+                    android:textStyle="bold"
+                    android:layout_marginRight="25dp"/>
+                <Button
+                    android:id="@+id/btnTidak"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:text="Tidak"
+                    android:textColor="#FFF"
+                    android:background="@drawable/background_content"
+                    android:textSize="16dp"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+            <TextView
+                android:id="@+id/txHasil"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:textSize="18dp"
+                android:textAlignment="center"
+                android:textColor="#000"/>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

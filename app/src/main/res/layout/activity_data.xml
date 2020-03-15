@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="www.kelompok3.com.Data">
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@drawable/background_navbar"
+                app:popupTheme="@style/AppTheme.PopupOverlay">
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="wrap_content"
+                android:layout_height="15dp"
+                android:src="@drawable/icon_back"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Data"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:textColor="#F1F1F1"
+                    android:layout_marginLeft="40dp" />
+
+        </android.support.v7.widget.Toolbar>
+        </RelativeLayout>
+    </android.support.design.widget.AppBarLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#FFF"
+            android:padding="5dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tabel Keputusan"
+                android:textSize="20dp"
+                android:textColor="#000"
+                android:textAlignment="center" />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="330dp"
+                android:src="@drawable/tabel_keputusan"
+                android:layout_marginBottom="20dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Data Gejala"
+                android:textSize="20dp"
+                android:textColor="#000"
+                android:textAlignment="center" />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="530dp"
+                android:src="@drawable/gejala"
+                android:layout_marginBottom="20dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pohon Keputusan"
+                android:textSize="20dp"
+                android:textColor="#000"
+                android:textAlignment="center" />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="600dp"
+                android:src="@drawable/pohon_keputusan"
+                android:layout_marginBottom="20dp"/>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

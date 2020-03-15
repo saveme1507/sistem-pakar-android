@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="ld_activityScreenTitles">
+        <item>Home</item>
+        <item>Klinik Gigi</item>
+        <item>Data</item>
+        <item>About</item>
+        <item>Share</item>
+        <item />
+        <item>Exit</item>
+    </string-array>
+
+    <array name="ld_activityScreenIcons">
+        <item>@drawable/icon_home</item>
+        <item>@drawable/icon_diagnosa</item>
+        <item>@drawable/icon_data</item>
+        <item>@drawable/icon_about</item>
+        <item>@drawable/icon_share</item>
+        <item>0</item>
+        <item>@drawable/icon_exit</item>
+    </array>
+
+</resources>
